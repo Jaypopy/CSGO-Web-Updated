@@ -1,0 +1,627 @@
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #000000;
+  opacity: 100%;
+  width: auto;
+  height: 24vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 2px, #000000;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.parallaxheader {
+  background-image: url('Background.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxfirstdiv {
+  background-image: url(Miragedark.jpg);
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 100%;
+}
+
+.textbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: black;
+  margin-top: 2rem;
+  margin-left: 4vw;
+  margin-right: 5rem;
+  border-radius: 1rem;
+  height: auto;
+  opacity: 90%;
+  width: 90vw ;
+}
+
+.headtext {
+  display: flex;
+  font-family: 'League Gothic', cursive;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  height: 5rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.breadtext {
+  font-family: 'Helvetica Neue', Arial, cursive;
+  color: rgb(216, 216, 216);
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 5rem;
+}
+
+.breadtext img {
+  font-family: 'Helvetica Neue', Arial, cursive;
+  color: rgb(216, 216, 216);
+}
+
+.btn {
+  color: #f1f1f1;
+  background-color: transparent;
+  font-size: 4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.btn:hover {
+  color: #3ed2e6;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  font-family: 'League Gothic', cursive;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #9fdbd3;
+  transition: 0.1s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0.2rem;
+  right: 1.8rem;
+  font-size: 3rem;
+}
+
+.fade-in {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  height: 30vw;
+  opacity: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+}
+#mask {
+  overflow: hidden;
+  height: 100%;
+}
+
+#slider {
+  background: #000;
+  border: 5px solid #494949;
+  box-shadow: 1px 1px 5px rgba(156, 156, 156, 0.7);
+  height: 25vh;
+  width: 40vw;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+#slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#slider li {
+  width: auto; /* Width Image */
+  height: auto; /* Height Image */
+  position: absolute;
+  top: -325px; /* Original Position - Outside of the Slider */
+  list-style: none;
+  
+}
+
+#slider li.firstanimation {
+  animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+  animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation {
+  animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation {
+  animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation {
+  animation: cyclefive 25s linear infinite;
+}
+
+.progress-bar {
+  position: relative;
+  top: -5px;
+  width: 80vw;
+  height: 5px;
+  background: #000;
+  animation: fullexpand 25s ease-out infinite;
+}
+
+
+@media only screen and (max-width:970px)
+{
+  #slider {
+    background: #000;
+    border: 5px solid #494949;
+    box-shadow: 1px 1px 5px rgba(156, 156, 156, 0.7);
+    height: 22vw;
+    width: 40vw;
+    margin: 40px auto 0;
+    overflow: visible;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    margin: 0;
+    background-color: black;
+    scroll-behavior: smooth;
+  }
+
+  header {
+    background-color: #000000;
+    opacity: 100%;
+    width: 100vw;
+    height: 24vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 10vw;
+    text-shadow: 2px, #000000;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-grid {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+  }
+
+  .parallaxheader {
+    background-image: url('Background.jpg');
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallaxfirstdiv {
+    background-image: url(Miragedark.jpg);
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+  }
+
+  .textbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: black;
+    margin-top: 2rem;
+    margin-left: 1.4rem;
+    margin-right: 5rem;
+    border-radius: 1rem;
+    height: auto;
+    opacity: 90%;
+  }
+
+  .headtext {
+    display: flex;
+    font-family: 'League Gothic', cursive;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 5rem;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .breadtext {
+    font-family: 'Helvetica Neue', Arial, cursive;
+    color: rgb(216, 216, 216);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 5rem;
+  }
+
+  .breadtext img {
+    font-family: 'Helvetica Neue', Arial, cursive;
+    color: rgb(216, 216, 216);
+  }
+
+  .btn {
+    color: #f1f1f1;
+    background-color: transparent;
+    font-size: 4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-left: 19rem;
+  }
+
+  .btn:hover {
+    color: #3ed2e6;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #9fdbd3;
+    transition: 0.1s;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 0.2rem;
+    right: 1.8rem;
+    font-size: 3rem;
+  }
+
+  .fade-in {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 30vw;
+    opacity: 100%;
+  }
+}
+
+@keyframes fullexpand {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  4%,
+  24%,
+  44%,
+  64%,
+  84% {
+    width: 0%;
+    opacity: 0.3;
+  }
+
+  16%,
+  36%,
+  56%,
+  76%,
+  96% {
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  17%,
+  37%,
+  57%,
+  77%,
+  97% {
+    width: 100%;
+    opacity: 0.3;
+  }
+
+  18%,
+  38%,
+  58%,
+  78%,
+  98% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  } 
+  4% {
+    top: 0px;
+  } 
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  } 
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  } 
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  } 
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  } 
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycletwo {
+  0% {
+    top: -325px;
+    opacity: 0;
+  } 
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  } 
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  } 
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  } 
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cyclethree {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cyclefour {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes cyclefive {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+}

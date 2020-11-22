@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Grid test</title>
+    <link rel="stylesheet" href="grid.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/3bae817a3ffed7db86b763dd7d8004b2?family=League+Gothic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="startTimer()">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
+      <div class="overlay-content">
+        <a onclick="closeNav()" href="#news">News</a>
+        <a href="#">eSports</a>
+        <a href="#">Playermodels</a>
+        <a href="#">Weapon statistics</a>
+        <a href="#">Map Pool</a>
+        <a href="#">About us</a>
+        <a href="#">Merch Store</a>
+      </div>
+    </div>
+    <span class="btn" onclick="openNav()">≡</span>
+    <header class="parallaxheader">
+      <h1 class="title">SpelStats</h1>
+    </header>
+    <div class="page-grid"></div>
+    <div id="news" class="parallaxfirstdiv">
+      <div class="headtext">
+        CS:GO NEWS
+      </div>
+      <div class="textbox">
+        <div class="breadtext">
+          <div class="container">
+            <div id="content-slider">
+              <div id="slider">
+                <div id="mask">
+                  <ul>
+                    <li id="first" class="firstanimation">
+                      <a href="#">
+                        <img
+                          class="slide"
+                          src="Mirage.jpg"
+                          alt="CS:GO Mirage"
+                        />
+                      </a>
+                    </li>
+
+                    <li id="second" class="secondanimation">
+                      <a href="#"><img class="slide" src="Dust.jpg" alt="CS:GO Dust2" /></a>
+                    </li>
+
+                    <li id="third" class="thirdanimation">
+                      <a href="#"><img class="slide" src="Nuke.jpg" alt="CS:GO Nuke" /></a>
+                    </li>
+
+                    <li id="fourth" class="fourthanimation">
+                      <a href="#"><img class="slide" src="Cache.jpg" alt="CS:GO Cache" /></a>
+                    </li>
+
+                    <li id="fifth" class="fifthanimation">
+                      <a href="#">
+                        <img class="slide" src="Inferno.jpg" alt="CS:GO Inferno" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Majors</h2>
+          <br />
+          When we announced the Rio Major, we were excited to bring a CS:GO
+          Major to one of Counter-Strike’s most passionate fan bases. At the
+          time, we couldn’t have imagined the global challenges that have
+          limited live events throughout 2020.
+          <br />
+          <br />
+          We’re not going to ask players and fans to risk their health in order
+          to attend a Major while the pandemic still poses a threat to
+          travelers. Therefore, we have made the painful decision to cancel the
+          November Major.
+          <br />
+          <br />
+          So, what’s the plan? First, we’re going to hold off on scheduling
+          Majors until, at a minimum, Regional Major Ranking (RMR) LAN events
+          are safe to hold around the world. Until then, we expect to continue
+          to hold online RMR events to keep track of the best teams in each
+          region.
+          <br />
+          <br />
+          <h2>Coaching</h2>
+          <br />
+          Recently we’ve been made aware that several coaches of professional
+          CS:GO teams exploited a bug in the game in order to gain an advantage
+          over their opponents. It is unfortunate and frustrating that we did
+          not respond to this bug sooner. But bugs are the reality of
+          software—and until they are resolved, we need to be able to trust
+          players and coaches.
+          <br />
+          <br />
+          We won’t spend much time here reiterating our stance on the importance
+          of integrity in CS:GO matches. At a minimum, we expect that players
+          and coaches will play by the rules, and immediately pause the match
+          and alert tournament admins if they know of an issue that may give
+          them (or an opponent) an unfair advantage.
+          <br />
+          <br />
+          Any teams that were disqualified for exploiting this bug during an RMR
+          event will have their RMR points reset.
+          <br />
+          <br />
+          As for taking action against individual coaches, we’re going to wait
+          until we get a complete picture of the extent of the bug abuse and the
+          punishments handed down by third parties. Regardless of those
+          penalties, mid-match coaching will always be a tempting opportunity
+          for some teams to violate the integrity of the match. So we may also
+          consider limitations to coaching.
+          <br />
+          <br />
+          We’re looking forward to getting LAN events started again, and hope
+          that we can all find a safe way to do it soon.
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="openNav.js" type="text/javascript"></script>
+  </body>
+</html>
